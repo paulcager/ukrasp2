@@ -27,26 +27,39 @@
  io_form_input                       = 2
  io_form_boundary                    = 2
  debug_level                         = 0
+ adjust_output_times                 = .true.
  /
 
  &domains
- time_step                           = 108,
+ use_adaptive_time_step              = .true.
+ step_to_output_time                 = .true.
+ target_cfl                          = 1.2, 1.2, 1.2
+ target_hcfl                         = 0.84, 0.84, 0.84
+ max_step_increase_pct               = 5, 51, 51
+ starting_time_step                  =   -1,   -1,   -1
+ starting_time_step_den              =    0,    0,    0
+ max_time_step                       =   -1,   -1,   -1
+ max_time_step_den                   =    0,    0,    0
+ min_time_step                       =   -1,   -1,   -1
+ min_time_step_den                   =    0,    0,    0
+ adaptation_domain                   = 1
+ time_step                           = 180
  time_step_fract_num                 = 0,
  time_step_fract_den                 = 1,
  max_dom                             = 2,
- e_we                 = 28,     154,
- e_sn                 = 39,     253,
+ e_we              = 29,     58,
+ e_sn              = 40,     91,
  e_vert                              = 52,    52,    30,
  p_top_requested                     = 5000,
  num_metgrid_soil_levels             = 4,
- dx                                  = 36000,    4000
- dy                                  = 36000,    4000
+ dx                                  = 36000,    12000
+ dy                                  = 36000,    12000
  grid_id                             = 1,     2,     3,
  parent_id                           = 0,     1,     2,
- i_parent_start       = 1,      6,
- j_parent_start       = 1,      6,
- parent_grid_ratio      = 1,          9
- parent_time_step_ratio = 1,          9
+ i_parent_start    = 1,      5,
+ j_parent_start    = 1,      5,
+ parent_grid_ratio      = 1,          3
+ parent_time_step_ratio = 1,          3
  feedback                            = 1,
  smooth_option                       = 2,
  num_metgrid_levels                  = 27,
@@ -61,6 +74,7 @@
                                        0.257, 0.236, 0.213, 0.191, 0.168,
                                        0.145, 0.122, 0.098, 0.074, 0.050,
                                        0.025, 0.000
+/
 
  &physics
  mp_physics                          = 5,     5,     5,
@@ -79,6 +93,7 @@
  surface_input_source                = 1,
  num_soil_layers                     = 4,
  sf_urban_physics                    = 0,     0,     0,
+ /
 
 &noah_mp
  opt_sfc                             = 1,
