@@ -1,0 +1,256 @@
+2014-03-11 13:13:39.858 ---  *** Starting program geogrid.exe ***
+2014-03-11 13:13:39.858 --- Using the following namelist variables:
+2014-03-11 13:13:39.858 --- &SHARE
+2014-03-11 13:13:39.858 ---   WRF_CORE         = ARW
+2014-03-11 13:13:39.858 ---   MAX_DOM          = 2
+2014-03-11 13:13:39.858 ---   START_YEAR       = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   START_MONTH      = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   START_DAY        = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   START_HOUR       = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   START_MINUTE     = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   START_SECOND     = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   END_YEAR         = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   END_MONTH        = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   END_DAY          = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   END_HOUR         = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   END_MINUTE       = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   END_SECOND       = 0
+2014-03-11 13:13:39.859 ---                    = 0
+2014-03-11 13:13:39.859 ---   START_DATE       = 2014-02-22_03:00:00
+2014-03-11 13:13:39.859 ---                    = 2014-02-22_03:00:00
+2014-03-11 13:13:39.859 ---   END_DATE         = 2014-02-22_18:00:00
+2014-03-11 13:13:39.859 ---                    = 2014-02-22_18:00:00
+2014-03-11 13:13:39.859 ---   INTERVAL_SECONDS = 10800
+2014-03-11 13:13:39.859 ---   IO_FORM_GEOGRID  = 2
+2014-03-11 13:13:39.859 ---   OPT_OUTPUT_FROM_GEOGRID_PATH = ./
+2014-03-11 13:13:39.859 ---   SUBGRID_RATIO_X  = 1
+2014-03-11 13:13:39.859 ---                    = 1
+2014-03-11 13:13:39.859 ---   SUBGRID_RATIO_Y  = 1
+2014-03-11 13:13:39.859 ---                    = 1
+2014-03-11 13:13:39.859 ---   DEBUG_LEVEL      = 0
+2014-03-11 13:13:39.859 ---   ACTIVE_GRID      = .TRUE.
+2014-03-11 13:13:39.859 ---                    = .TRUE.
+2014-03-11 13:13:39.859 ---   NOCOLONS         = .FALSE.
+2014-03-11 13:13:39.859 --- /
+2014-03-11 13:13:39.859 --- &GEOGRID
+2014-03-11 13:13:39.859 ---   PARENT_ID         = 1
+2014-03-11 13:13:39.859 ---                     = 1
+2014-03-11 13:13:39.859 ---   PARENT_GRID_RATIO = 1
+2014-03-11 13:13:39.859 ---                     = 9
+2014-03-11 13:13:39.859 ---   I_PARENT_START    = 1
+2014-03-11 13:13:39.859 ---                     = 6
+2014-03-11 13:13:39.859 ---   J_PARENT_START    = 1
+2014-03-11 13:13:39.859 ---                     = 6
+2014-03-11 13:13:39.859 ---   S_WE              = 1
+2014-03-11 13:13:39.859 ---                     = 1
+2014-03-11 13:13:39.859 ---   E_WE              = 28
+2014-03-11 13:13:39.859 ---                     = 154
+2014-03-11 13:13:39.859 ---   S_SN              = 1
+2014-03-11 13:13:39.859 ---                     = 1
+2014-03-11 13:13:39.859 ---   E_SN              = 39
+2014-03-11 13:13:39.859 ---                     = 253
+2014-03-11 13:13:39.859 ---   GEOG_DATA_RES     = 10m
+2014-03-11 13:13:39.860 ---                     = 2m
+2014-03-11 13:13:39.860 ---   DX                = 36000.000000
+2014-03-11 13:13:39.860 ---   DY                = 36000.000000
+2014-03-11 13:13:39.860 ---   MAP_PROJ          = lambert
+2014-03-11 13:13:39.860 ---   POLE_LAT          = 90.000000
+2014-03-11 13:13:39.860 ---   POLE_LON          = 0.000000
+2014-03-11 13:13:39.860 ---   REF_LAT           = 54.500000
+2014-03-11 13:13:39.860 ---   REF_LON           = -3.500000
+2014-03-11 13:13:39.860 ---   REF_X             = 100000002004087734272.000000
+2014-03-11 13:13:39.860 ---   REF_Y             = 100000002004087734272.000000
+2014-03-11 13:13:39.860 ---   TRUELAT1          = 60.000000
+2014-03-11 13:13:39.860 ---   TRUELAT2          = 60.000000
+2014-03-11 13:13:39.860 ---   STAND_LON         = 17.000000
+2014-03-11 13:13:39.860 ---   GEOG_DATA_PATH    = /home/rasptest/geog
+2014-03-11 13:13:39.860 ---   OPT_GEOGRID_TBL_PATH = /home/rasptest/RUN.TABLES
+2014-03-11 13:13:39.860 --- /
+2014-03-11 13:13:39.863 --- Processing domain 1 of 2
+2014-03-11 13:13:39.863 --- INFORM: Using 10m interpolator sequence for HGT_M.
+2014-03-11 13:13:39.863 --- INFORM: Using 10m data source for HGT_M.
+2014-03-11 13:13:39.863 --- INFORM: Using 10m interpolator sequence for LANDUSEF.
+2014-03-11 13:13:39.863 --- INFORM: Using 10m data source for LANDUSEF.
+2014-03-11 13:13:39.863 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution 10m.
+2014-03-11 13:13:39.863 --- INFORM: Using default interpolator sequence for SOILTEMP.
+2014-03-11 13:13:39.863 --- INFORM: For SOILTEMP, couldn't find 10m data source.
+2014-03-11 13:13:39.863 --- INFORM: Using default data source for SOILTEMP.
+2014-03-11 13:13:39.863 --- INFORM: Using 10m interpolator sequence for SOILCTOP.
+2014-03-11 13:13:39.863 --- INFORM: Using 10m data source for SOILCTOP.
+2014-03-11 13:13:39.863 --- INFORM: Using 10m interpolator sequence for SOILCBOT.
+2014-03-11 13:13:39.863 --- INFORM: Using 10m data source for SOILCBOT.
+2014-03-11 13:13:39.863 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution 10m.
+2014-03-11 13:13:39.863 --- INFORM: Using default interpolator sequence for ALBEDO12M.
+2014-03-11 13:13:39.863 --- INFORM: For ALBEDO12M, couldn't find 10m data source.
+2014-03-11 13:13:39.864 --- INFORM: Using default data source for ALBEDO12M.
+2014-03-11 13:13:39.864 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution 10m.
+2014-03-11 13:13:39.864 --- INFORM: Using default interpolator sequence for GREENFRAC.
+2014-03-11 13:13:39.864 --- INFORM: For GREENFRAC, couldn't find 10m data source.
+2014-03-11 13:13:39.864 --- INFORM: Using default data source for GREENFRAC.
+2014-03-11 13:13:39.864 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution 10m.
+2014-03-11 13:13:39.864 --- INFORM: Using default interpolator sequence for SNOALB.
+2014-03-11 13:13:39.864 --- INFORM: For SNOALB, couldn't find 10m data source.
+2014-03-11 13:13:39.864 --- INFORM: Using default data source for SNOALB.
+2014-03-11 13:13:39.864 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution 10m.
+2014-03-11 13:13:39.864 --- INFORM: Using default interpolator sequence for SLOPECAT.
+2014-03-11 13:13:39.864 --- INFORM: For SLOPECAT, couldn't find 10m data source.
+2014-03-11 13:13:39.864 --- INFORM: Using default data source for SLOPECAT.
+2014-03-11 13:13:39.864 --- INFORM: Using 10m interpolator sequence for CON.
+2014-03-11 13:13:39.864 --- INFORM: Using 10m data source for CON.
+2014-03-11 13:13:39.864 --- INFORM: Using 10m interpolator sequence for VAR.
+2014-03-11 13:13:39.864 --- INFORM: Using 10m data source for VAR.
+2014-03-11 13:13:39.865 --- INFORM: Using 10m interpolator sequence for OA1.
+2014-03-11 13:13:39.865 --- INFORM: Using 10m data source for OA1.
+2014-03-11 13:13:39.865 --- INFORM: Using 10m interpolator sequence for OA2.
+2014-03-11 13:13:39.865 --- INFORM: Using 10m data source for OA2.
+2014-03-11 13:13:39.865 --- INFORM: Using 10m interpolator sequence for OA3.
+2014-03-11 13:13:39.865 --- INFORM: Using 10m data source for OA3.
+2014-03-11 13:13:39.865 --- INFORM: Using 10m interpolator sequence for OA4.
+2014-03-11 13:13:39.865 --- INFORM: Using 10m data source for OA4.
+2014-03-11 13:13:39.865 --- INFORM: Using 10m interpolator sequence for OL1.
+2014-03-11 13:13:39.865 --- INFORM: Using 10m data source for OL1.
+2014-03-11 13:13:39.866 --- INFORM: Using 10m interpolator sequence for OL2.
+2014-03-11 13:13:39.866 --- INFORM: Using 10m data source for OL2.
+2014-03-11 13:13:39.866 --- INFORM: Using 10m interpolator sequence for OL3.
+2014-03-11 13:13:39.866 --- INFORM: Using 10m data source for OL3.
+2014-03-11 13:13:39.866 --- INFORM: Using 10m interpolator sequence for OL4.
+2014-03-11 13:13:39.866 --- INFORM: Using 10m data source for OL4.
+2014-03-11 13:13:39.866 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution 10m.
+2014-03-11 13:13:39.866 --- INFORM: Using default interpolator sequence for VAR_SSO.
+2014-03-11 13:13:39.866 --- INFORM: For VAR_SSO, couldn't find 10m data source.
+2014-03-11 13:13:39.866 --- INFORM: Using default data source for VAR_SSO.
+2014-03-11 13:13:39.902 --- Processing field 1 of 25 (LANDUSEF)
+2014-03-11 13:13:39.915 --- Processing field 2 of 25 (LU_INDEX)
+2014-03-11 13:13:39.916 --- Processing field 3 of 25 (HGT_M)
+2014-03-11 13:13:39.917 --- Processing field 4 of 25 (SLPX)
+2014-03-11 13:13:39.917 --- Processing field 5 of 25 (SLPY)
+2014-03-11 13:13:39.917 --- Processing field 6 of 25 (SOILTEMP)
+2014-03-11 13:13:39.919 --- Processing field 7 of 25 (SOILCTOP)
+2014-03-11 13:13:39.927 --- Processing field 8 of 25 (SCT_DOM)
+2014-03-11 13:13:39.927 --- Processing field 9 of 25 (SOILCBOT)
+2014-03-11 13:13:39.947 --- Processing field 10 of 25 (SCB_DOM)
+2014-03-11 13:13:39.947 --- Processing field 11 of 25 (ALBEDO12M)
+2014-03-11 13:13:40.013 --- Processing field 12 of 25 (GREENFRAC)
+2014-03-11 13:13:40.075 --- Processing field 13 of 25 (SNOALB)
+2014-03-11 13:13:40.076 --- Processing field 14 of 25 (SLOPECAT)
+2014-03-11 13:13:40.102 --- Processing field 15 of 25 (CON)
+2014-03-11 13:13:40.107 --- Processing field 16 of 25 (VAR)
+2014-03-11 13:13:40.113 --- Processing field 17 of 25 (OA1)
+2014-03-11 13:13:40.125 --- Processing field 18 of 25 (OA2)
+2014-03-11 13:13:40.132 --- Processing field 19 of 25 (OA3)
+2014-03-11 13:13:40.140 --- Processing field 20 of 25 (OA4)
+2014-03-11 13:13:40.147 --- Processing field 21 of 25 (OL1)
+2014-03-11 13:13:40.161 --- Processing field 22 of 25 (OL2)
+2014-03-11 13:13:40.167 --- Processing field 23 of 25 (OL3)
+2014-03-11 13:13:40.172 --- Processing field 24 of 25 (OL4)
+2014-03-11 13:13:40.178 --- Processing field 25 of 25 (VAR_SSO)
+2014-03-11 13:13:40.693 --- Processing domain 2 of 2
+2014-03-11 13:13:40.693 --- INFORM: Using 2m interpolator sequence for HGT_M.
+2014-03-11 13:13:40.693 --- INFORM: Using 2m data source for HGT_M.
+2014-03-11 13:13:40.693 --- INFORM: Using 2m interpolator sequence for LANDUSEF.
+2014-03-11 13:13:40.693 --- INFORM: Using 2m data source for LANDUSEF.
+2014-03-11 13:13:40.693 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.693 --- INFORM: Using default interpolator sequence for SOILTEMP.
+2014-03-11 13:13:40.693 --- INFORM: For SOILTEMP, couldn't find 2m data source.
+2014-03-11 13:13:40.693 --- INFORM: Using default data source for SOILTEMP.
+2014-03-11 13:13:40.693 --- INFORM: Using 2m interpolator sequence for SOILCTOP.
+2014-03-11 13:13:40.693 --- INFORM: Using 2m data source for SOILCTOP.
+2014-03-11 13:13:40.693 --- INFORM: Using 2m interpolator sequence for SOILCBOT.
+2014-03-11 13:13:40.693 --- INFORM: Using 2m data source for SOILCBOT.
+2014-03-11 13:13:40.694 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.694 --- INFORM: Using default interpolator sequence for ALBEDO12M.
+2014-03-11 13:13:40.694 --- INFORM: For ALBEDO12M, couldn't find 2m data source.
+2014-03-11 13:13:40.694 --- INFORM: Using default data source for ALBEDO12M.
+2014-03-11 13:13:40.694 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.694 --- INFORM: Using default interpolator sequence for GREENFRAC.
+2014-03-11 13:13:40.694 --- INFORM: For GREENFRAC, couldn't find 2m data source.
+2014-03-11 13:13:40.694 --- INFORM: Using default data source for GREENFRAC.
+2014-03-11 13:13:40.694 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.694 --- INFORM: Using default interpolator sequence for SNOALB.
+2014-03-11 13:13:40.694 --- INFORM: For SNOALB, couldn't find 2m data source.
+2014-03-11 13:13:40.694 --- INFORM: Using default data source for SNOALB.
+2014-03-11 13:13:40.694 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.694 --- INFORM: Using default interpolator sequence for SLOPECAT.
+2014-03-11 13:13:40.694 --- INFORM: For SLOPECAT, couldn't find 2m data source.
+2014-03-11 13:13:40.694 --- INFORM: Using default data source for SLOPECAT.
+2014-03-11 13:13:40.694 --- INFORM: For CON, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.694 --- INFORM: Using default interpolator sequence for CON.
+2014-03-11 13:13:40.694 --- INFORM: For CON, couldn't find 2m data source.
+2014-03-11 13:13:40.694 --- INFORM: Using default data source for CON.
+2014-03-11 13:13:40.694 --- INFORM: For VAR, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.694 --- INFORM: Using default interpolator sequence for VAR.
+2014-03-11 13:13:40.694 --- INFORM: For VAR, couldn't find 2m data source.
+2014-03-11 13:13:40.695 --- INFORM: Using default data source for VAR.
+2014-03-11 13:13:40.695 --- INFORM: For OA1, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.695 --- INFORM: Using default interpolator sequence for OA1.
+2014-03-11 13:13:40.695 --- INFORM: For OA1, couldn't find 2m data source.
+2014-03-11 13:13:40.695 --- INFORM: Using default data source for OA1.
+2014-03-11 13:13:40.695 --- INFORM: For OA2, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.695 --- INFORM: Using default interpolator sequence for OA2.
+2014-03-11 13:13:40.695 --- INFORM: For OA2, couldn't find 2m data source.
+2014-03-11 13:13:40.695 --- INFORM: Using default data source for OA2.
+2014-03-11 13:13:40.695 --- INFORM: For OA3, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.695 --- INFORM: Using default interpolator sequence for OA3.
+2014-03-11 13:13:40.695 --- INFORM: For OA3, couldn't find 2m data source.
+2014-03-11 13:13:40.695 --- INFORM: Using default data source for OA3.
+2014-03-11 13:13:40.695 --- INFORM: For OA4, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.695 --- INFORM: Using default interpolator sequence for OA4.
+2014-03-11 13:13:40.695 --- INFORM: For OA4, couldn't find 2m data source.
+2014-03-11 13:13:40.695 --- INFORM: Using default data source for OA4.
+2014-03-11 13:13:40.695 --- INFORM: For OL1, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.695 --- INFORM: Using default interpolator sequence for OL1.
+2014-03-11 13:13:40.695 --- INFORM: For OL1, couldn't find 2m data source.
+2014-03-11 13:13:40.695 --- INFORM: Using default data source for OL1.
+2014-03-11 13:13:40.695 --- INFORM: For OL2, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.695 --- INFORM: Using default interpolator sequence for OL2.
+2014-03-11 13:13:40.696 --- INFORM: For OL2, couldn't find 2m data source.
+2014-03-11 13:13:40.696 --- INFORM: Using default data source for OL2.
+2014-03-11 13:13:40.696 --- INFORM: For OL3, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.696 --- INFORM: Using default interpolator sequence for OL3.
+2014-03-11 13:13:40.696 --- INFORM: For OL3, couldn't find 2m data source.
+2014-03-11 13:13:40.696 --- INFORM: Using default data source for OL3.
+2014-03-11 13:13:40.696 --- INFORM: For OL4, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.696 --- INFORM: Using default interpolator sequence for OL4.
+2014-03-11 13:13:40.696 --- INFORM: For OL4, couldn't find 2m data source.
+2014-03-11 13:13:40.696 --- INFORM: Using default data source for OL4.
+2014-03-11 13:13:40.696 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution 2m.
+2014-03-11 13:13:40.696 --- INFORM: Using default interpolator sequence for VAR_SSO.
+2014-03-11 13:13:40.696 --- INFORM: For VAR_SSO, couldn't find 2m data source.
+2014-03-11 13:13:40.696 --- INFORM: Using default data source for VAR_SSO.
+2014-03-11 13:13:40.791 --- Processing field 1 of 25 (LANDUSEF)
+2014-03-11 13:13:41.076 --- Processing field 2 of 25 (LU_INDEX)
+2014-03-11 13:13:41.088 --- Processing field 3 of 25 (HGT_M)
+2014-03-11 13:13:41.113 --- Processing field 4 of 25 (SLPX)
+2014-03-11 13:13:41.113 --- Processing field 5 of 25 (SLPY)
+2014-03-11 13:13:41.114 --- Processing field 6 of 25 (SOILTEMP)
+2014-03-11 13:13:41.135 --- Processing field 7 of 25 (SOILCTOP)
+2014-03-11 13:13:41.319 --- Processing field 8 of 25 (SCT_DOM)
+2014-03-11 13:13:41.325 --- Processing field 9 of 25 (SOILCBOT)
+2014-03-11 13:13:41.502 --- Processing field 10 of 25 (SCB_DOM)
+2014-03-11 13:13:41.507 --- Processing field 11 of 25 (ALBEDO12M)
+2014-03-11 13:13:41.698 --- Processing field 12 of 25 (GREENFRAC)
+2014-03-11 13:13:41.888 --- Processing field 13 of 25 (SNOALB)
+2014-03-11 13:13:41.907 --- Processing field 14 of 25 (SLOPECAT)
+2014-03-11 13:13:41.947 --- Processing field 15 of 25 (CON)
+2014-03-11 13:13:41.967 --- Processing field 16 of 25 (VAR)
+2014-03-11 13:13:42.002 --- Processing field 17 of 25 (OA1)
+2014-03-11 13:13:42.032 --- Processing field 18 of 25 (OA2)
+2014-03-11 13:13:42.063 --- Processing field 19 of 25 (OA3)
+2014-03-11 13:13:42.087 --- Processing field 20 of 25 (OA4)
+2014-03-11 13:13:42.125 --- Processing field 21 of 25 (OL1)
+2014-03-11 13:13:42.152 --- Processing field 22 of 25 (OL2)
+2014-03-11 13:13:42.186 --- Processing field 23 of 25 (OL3)
+2014-03-11 13:13:42.216 --- Processing field 24 of 25 (OL4)
+2014-03-11 13:13:42.246 --- Processing field 25 of 25 (VAR_SSO)
+2014-03-11 13:13:42.748 ---  *** Successful completion of program geogrid.exe ***

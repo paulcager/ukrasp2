@@ -1,0 +1,37 @@
+FROM debian:latest
+
+ENV BASEDIR=/root/rasp/
+RUN mkdir $BASEDIR
+
+EXPOSE 80
+
+
+WORKDIR /root/
+
+ADD *.tar.xz $BASEDIR
+ADD libjasper.so.1 libpng15.so.15 /lib64/
+
+# required packages
+RUN apt-get update && apt-get install -y --no-install-recommends \
+  curl mailutils psmisc procps ncl-ncarg \
+  libpng16-16 libjpeg62-turbo iproute2 libwrap0 \
+  findutils imagemagick netpbm perl libproc-background-perl ncl-tools netcdf-bin \
+  libnetcdff6 \
+  vim wget lighttpd
+
+#RUN apt-get update && apt-get install -y --no-install-recommends ncl-ncarg
+
+# The exes are linked to old versions of the libs.
+RUN cd /usr/lib/x86_64-linux-gnu \
+  && ln -s libnetcdff.so.6 libnetcdff.so.5 \
+  && ln -s libnetcdf.so.11 libnetcdf.so.7 \
+  && ln -s libpng15.so.16 libpng15.so.15
+
+ADD ncl.Linux_i686_gcc4.tar.gz /root/ncl
+
+RUN cp -a /root/rasp/region.TEMPLATE/* /root/rasp/UK12/
+
+
+ADD config/ /root/
+
+CMD ["bash"]
