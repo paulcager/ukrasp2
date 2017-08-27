@@ -1,0 +1,136 @@
+Usually uses 2.2 GB RAM.
+10GB spare
+
+8-CPU Linode
+
+[root@326ddfd03b57 rasp]# cd /root/rasp; time runGM UK4
+
+real	50m3.610s
+user	372m56.931s
+sys	10m47.020s
+
+
+
+
+8-CPU Google Container OS
+wrf ~30% memory: res ~ 2.22g
+
+
+
+[root@139b87858f52 rasp]# cd /root/rasp; time runGM UK4
+Null message body; hope that's ok
+temporary mail file: No space left on device
+No space left on device
+. . . message not sent.
+
+real	36m19.426s
+user	275m28.182s
+sys	2m28.514s
+[root@139b87858f52 rasp]# df -h /
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         5.8G  5.7G     0 100% /
+Need about 10GB spare
+
+
+[root@609889fa3463 rasp]# cd /root/rasp; date; time runGM UK4
+Fri Aug 25 19:22:38 UTC 2017
+  
+real	51m14.690s
+user	365m3.582s
+sys	7m49.165s
+
+
+
+EC2
+
+[root@7c3c56892e29 rasp]# cd /root/rasp; date; time runGM UK4
+Fri Aug 25 22:12:49 UTC 2017
+
+real	44m6.812s
+user	329m18.244s
+sys	6m29.388s
+[root@7c3c56892e29 rasp]# du -sh * | sort -h
+4.0K	rasp.site.parameters
+4.0K	rasp.site.runenvironment
+16K	region.TEMPLATE
+24K	WRFV3-HowTo.odt
+104K	WRFV3-HowTo.pdf
+632K	GM
+904K	RUN.TABLES
+2.8M	PANOCHE
+3.2M	UK12
+4.2M	RASPtableGM
+71M	UK2+1
+136M	lib
+204M	bin
+6.2G	UK4
+
+181M	UK4/wrfout_d02_2017-08-25_17:30:00
+181M	UK4/wrfout_d02_2017-08-25_18:00:00
+551M	UK4/HTML
+551M	UK4/OUT
+
+
+
+------------------------------------------------------------------
+
+UK2+1
+
+Needs ~8GB RAM for wrf, possibly more for real.
+
+[root@50325857d8f5 rasp]# cd /root/rasp; date; time runGM UK2+1
+Fri Aug 25 23:38:51 UTC 2017
+Null message body; hope that's ok
+temporary mail file: No space left on device
+No space left on device
+. . . message not sent.
+
+real	171m52.578s
+user	1328m7.375s
+sys	2m50.892s
+
+
+[root@50325857d8f5 rasp]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          16G   16G     0 100% /
+tmpfs            15G     0   15G   0% /dev
+tmpfs            15G     0   15G   0% /sys/fs/cgroup
+/dev/sda1        16G   16G     0 100% /etc/hosts
+shm              64M     0   64M   0% /dev/shm
+tmpfs            15G     0   15G   0% /sys/firmware
+
+
+[root@56869e1d1176 rasp]# cd /root/rasp; date; time runGM UK2+1
+Sat Aug 26 23:08:02 UTC 2017
+
+real	241m38.934s
+user	1862m21.111s
+sys	12m46.804s
+
+[root@56869e1d1176 rasp]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          36G   24G   13G  66% /
+
+22G	UK2+1
+
+
+[root@56869e1d1176 rasp]# du -sh UK2+1/* | sort -h
+...
+698M	UK2+1/wrfout_d02_2017-08-27_11:30:00
+698M	UK2+1/wrfout_d02_2017-08-27_12:00:00
+698M	UK2+1/wrfout_d02_2017-08-27_12:30:00
+698M	UK2+1/wrfout_d02_2017-08-27_13:00:00
+698M	UK2+1/wrfout_d02_2017-08-27_13:30:00
+698M	UK2+1/wrfout_d02_2017-08-27_14:00:00
+698M	UK2+1/wrfout_d02_2017-08-27_14:30:00
+698M	UK2+1/wrfout_d02_2017-08-27_15:00:00
+698M	UK2+1/wrfout_d02_2017-08-27_15:30:00
+698M	UK2+1/wrfout_d02_2017-08-27_16:00:00
+698M	UK2+1/wrfout_d02_2017-08-27_16:30:00
+698M	UK2+1/wrfout_d02_2017-08-27_17:00:00
+698M	UK2+1/wrfout_d02_2017-08-27_17:30:00
+698M	UK2+1/wrfout_d02_2017-08-27_18:00:00
+1.1G	UK2+1/OUT
+1.5G	UK2+1/HTML
+
+
