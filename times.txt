@@ -107,6 +107,7 @@ real	241m38.934s
 user	1862m21.111s
 sys	12m46.804s
 
+
 [root@56869e1d1176 rasp]# df -h
 Filesystem      Size  Used Avail Use% Mounted on
 overlay          36G   24G   13G  66% /
@@ -134,3 +135,7 @@ overlay          36G   24G   13G  66% /
 1.5G	UK2+1/HTML
 
 
+so 
+	UK2+1 ~ 4 hours with 8 CPUs
+	UK4 ~ 45 mins
+	UK12
