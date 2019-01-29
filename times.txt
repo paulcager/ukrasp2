@@ -139,3 +139,10 @@ so
 	UK2+1 ~ 4 hours with 8 CPUs
 	UK4 ~ 45 mins
 	UK12
+
+On PC 8 cores
+[root@d29dbd504dce rasp]# cd /root/rasp; time runGM UK4                               
+                                                                                      
+real    46m44.909s                                                                    
+user    351m32.403s                                                              
+sys     5m6.520s   
